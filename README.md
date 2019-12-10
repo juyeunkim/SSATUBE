@@ -12,6 +12,12 @@
 ## Introduction
 
 ```
+ssafy
+|-- 19_20winter
+|   `-- ssafyProjectWinter2019_2020
+|     `-- juyeon
+|     `-- ingyu
+|     `-- suyoung
 ```
 
 ## Table of Contents
