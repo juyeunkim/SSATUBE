@@ -1,0 +1,10 @@
+{
+  "name": "wetube",
+  "version": "1.0.0",
+  "description": "youtube clone",
+  "main": "vanillajs, nodejs",
+  "author": "ingyu",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
