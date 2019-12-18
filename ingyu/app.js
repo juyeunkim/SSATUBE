@@ -5,23 +5,21 @@ import morgan from "morgan";
 import helmet from "helmet";
 import cookieParser from "cookie-parser";
 import bodyParser from "body-parser";
-import { uesrRouter } from "./router";
+import { uesrRouter } from "./routers/userRouter";
+import userRouter from "./routers/userRouter";
+import videoRouter from "./routers/videoRouter";
+import globalRouter from "./routers/globalRouter";
 const app = express();
 
-
-const handleHome = (req, res) => res.send('Hello from home3');    
-
-const handleProfile = (req,res) =>res.send("You are on my profile");
 app.use(cookieParser());
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({extended : true})); //위에서부터 아래로 
 app.use(helmet()); //보안을 위한것이다. 
 app.use(morgan("dev"));
 
-
-//route 
-app.get("/", handleHome); //middleware 로 연결이 끊킨다. 
-app.get("/profile", handleProfile);
-app.use("/user", uesrRouter);
-
+app.use(
+    "/",globalRouter
+);
+app.use("/user",userRouter);
+app.use("/video",videoRouter);
 export default app;
