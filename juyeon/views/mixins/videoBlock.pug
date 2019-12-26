@@ -1,5 +1,8 @@
 mixin videoBlock(video = {})
     .videoBlock
-        video.videoBlock__thumbnail(src=video.videoFile, controls=true) // controls= true : 동영상 자동 재생
-        h4.videoBlock__title=video.title
-        h6.videoBlock__views=video.views 
+        a(href=routes.videoDetail(video.id))
+            video.videoBlock__thumbnail(src=video.videoFile, controls=true) // controls= true : 동영상 자동 재생
+            h4.videoBlock__title=video.title
+            h6.videoBlock__views=video.views
+
+// videoBlock 라는 객체를 생성해서 .Pug파일해서 불러서 사용 ==> 코드의 재사용

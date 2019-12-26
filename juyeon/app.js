@@ -13,13 +13,13 @@ import globalRouter from "./routers/globalRouter";
 const app = express();
 
 app.use(helmet());
-app.set("view engine", "pug");
+app.set("view engine", "pug"); // application 설정
 app.use(cookieParser());
-app.use(bodyParser.json());
+app.use(bodyParser.json()); // form으로 데이터를 주고받을때 -- 데이터를 출력
 app.use(bodyParser.urlencoded({ extended: true })); // html파일
-app.use(morgan("dev"));
+app.use(morgan("dev")); // log 설정 (개발)
 
-app.use(localsMiddleware);
+app.use(localsMiddleware); // 모든 router 설정
 
 app.use(routes.home, globalRouter);
 app.use(routes.users, userRouter);
