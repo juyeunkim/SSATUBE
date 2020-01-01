@@ -29,6 +29,8 @@ SSATUBE
 |     `-- ingyu
 |     `-- juyeon
 |     `-- suyoung
+|     `-- README.md
+|     `-- youtube.png
 ```
 
 ## Prerequisite
