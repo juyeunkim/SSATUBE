@@ -25,11 +25,9 @@
 ## Introduction
 
 ```
-ssafy
-|-- 19_20winter
-|   `-- ssafyProjectWinter2019_2020
-|     `-- juyeon
+SSATUBE
 |     `-- ingyu
+|     `-- juyeon
 |     `-- suyoung
 ```
 
