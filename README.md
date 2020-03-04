@@ -81,6 +81,3 @@ We are following [Angular's commitizen rules](https://github.com/angular/angular
 $ yarn run commit
 ```
 
-## About
-
-Authored and maintained by **ssafy**
